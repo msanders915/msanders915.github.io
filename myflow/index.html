@@ -11,11 +11,24 @@
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: rgb(0, 0, 0);
-        background-image: linear-gradient(skyblue, hotpink);
+        background-color: linear-gradient(skyblue, hotpink);
     }
     
     img {
         opacity: 0.8;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    #purple-color {
+        color: darkorchid;
+    }
+    
+    img {
+        border-color: coral;
+        border-style: solid;
     }
 </style>
 
@@ -27,7 +40,7 @@
 </head>
 
 <body>
-    <h1>What is my flow?</h1>
+    <h1 id="purple-color" , class="center">What is my flow?</h1>
     <img src="images/coding.png" alt="Coding" width="300px">
     <img src="images/basketball.jpg" alt="Basketball" width="300px">
     <img src="images/cooking.jpg" alt="Cooking" width="300px">
@@ -37,9 +50,9 @@
         <li>Basketball</li>
         <li>Cooking</li>
     </ul>
-    <p>I can focus really hard on these three things in particular and get into the flow state. I can spend hours coding and it'll feel like minutes.</p>
+    <p class="center">I can focus really hard on these three things in particular and get into the flow state. I can spend hours coding and it'll feel like minutes.</p>
     <br>
-    <p>So, I spend a lot of time on each of these tasks a week.</p>
+    <p class="center" , style="font-size:large">So, I spend a lot of time on each of these tasks a week.</p>
     <table>
         <tr>
             <th></th>
