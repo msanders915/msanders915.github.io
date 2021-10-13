@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsdemo</title>
+</head>
+
+<body>
+    <h1> Lets learn some javascript</h1>
+    <h2> How do we do onclick events and alerts on an anchor?</h2>
+    <a href="google.com" target="_blank" onclick="alert('Warning. You are navigating away from my page.')">Google</a>
+    <hr>
+    <h2> how do we change HTML with javascript with a button?</h2>
+    <p> What is the color of the sky?</p>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='blue';document.getElementById('secret').style.display='block'">Reveal!</button>
+
+    <button onclick="document.getElementById('secret').style.display='none'">Hide</button>
+
+    <hr>
+    <h2>how do we change images with javascript?</h2>
+    <img src="images/blank.PNG" alt="among us" id="my-image">
+    <button onclick="document.getElementById('my-image').src='images/orange.png'">Turn on</button>
+
+    <button onclick="document.getElementById('my-image').src='images/blank.png'">Turn off</button>
+
+    <hr>
+
+    <h2>alice in wonderland challenge</h2>
+    <p id="alice"> Hi I am not Alice. </p>
+
+
+    <button onclick="document.getElementById('alice').style.fontSize='small';onclick=document.getElementById('alice').style.color='red'"> Cup of mysterious liquid: Drink me.</button>
+
+    <button onclick="document.getElementById('alice').style.fontSize='large';onclick=document.getElementById('alice').style.color='blue'"> Cup of other mysterious liquid: Drink me.</button>
+
+    <hr>
+    <h2> finding own piece of javascript</h2>
+    <p id="background">this background color will change</p>
+    <button onclick="document.getElementById('background').style.fontFamily='cursive';document.getElementById('background').style.backgroundColor='lightblue'">Suprise button?</button>
+</body>
+
+</html>
