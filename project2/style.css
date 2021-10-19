@@ -31,6 +31,14 @@ div.side {
     height: 1000px;
 }
 
+div.image {
+    margin-left: 60%;
+    padding: 1px 100px;
+    height: 1000px;
+    position: absolute;
+}
+
 .image img {
     position: relative;
+    bottom: 1000px;
 }
