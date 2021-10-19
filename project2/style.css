@@ -29,6 +29,8 @@ div.side {
     margin-left: 10%;
     padding: 1px 16px;
     height: 1000px;
+    overflow-wrap: break-word;
+    width: 50%;
 }
 
 div.image {
