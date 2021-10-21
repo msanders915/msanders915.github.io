@@ -35,11 +35,36 @@
         <p> In this unfortunate event, you can thankfully look to Mitch Greene from speeding in Seattle. Mr. Greene has over 25 years of experience, and from personal experience, will get you out of that ticket.</p>
 
         <a href="http://www.speedinginseattle.com/" target="_blank "> Visit Speeding in Seattle! </a>
-    </div>
-    <p>Choose a button.</p>
-    <button type="button" onclick="alert('Oh no. You didn't use Mitch Greene and now have a 300 dollar speeding ticket!')">Press me!</button>
+        <br>
+        <p>Here is some information about speeding tickets and prices in Washington.</p>
+        <table>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>1-5 MPH over in a less than 40 speed zone</td>
+                <td> 21-25 MPH over in a less than 40 speed zone</td>
+                <td> 1-5 MPH over in an over 40 speed zone</td>
+                <td> 21-25 MPH over in an over 40 speed zone</td>
+            </tr>
+            <tr>
+                <td>$128</td>
+                <td>$262</td>
+                <td>$108</td>
+                <td>$221</td>
+            </tr>
+        </table>
+        <p>Choose a button.</p>
 
-    <button type="button" onclick="alert('Nice! You used Mitch Greene and got out of a 300 dollar ticket!')">Press me!</button>
+        <p id="mitch"></p>
+        <button onclick="document.getElementById('mitch').innerHTML='Oh no! You did not use Mitch Greene and got a 300 dollar speeding ticket!';document.getElementById('mitch').style.display='block'">option 1!</button>
+
+        <button onclick="document.getElementById('mitch').innerHTML='Yay! You used Mitch Greene and got out of a ticket!';document.getElementById('mitch').style.display='block'">option 2!</button>
+        <button onclick="document.getElementById('mitch').style.display='none'">Hide</button>
+
+    </div>
+
 
     <div class="footer">
         <p> Ian pg. 2</p>
