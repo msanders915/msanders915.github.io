@@ -16,6 +16,11 @@
             background-color: cornflowerblue;
             text-align: center;
         }
+        
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 
@@ -35,7 +40,42 @@
         <p> In this unfortunate event, you can thankfully look to Mitch Greene from speeding in Seattle to caress you. Mr. Greene has over 25 years of experience, and from personal experience, will get you out of that ticket.</p>
 
         <a href="http://www.speedinginseattle.com/" target="_blank "> Visit Speeding in Seattle! </a>
+        <br>
+        <p style="text-align: center;">Here is some information about speeding tickets and prices in Washington.</p>
+        <table class="center">
+            <tr>
+                <th>Ticket Type</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>1-5 MPH over in a less than 40 speed zone</td>
+                <td>$128</td>
+            </tr>
+
+            <tr>
+                <td> 21-25 MPH over in a less than 40 speed zone</td>
+                <td>$262</td>
+            </tr>
+            <tr>
+                <td> 1-5 MPH over in an over 40 speed zone</td>
+                <td>$108</td>
+
+            </tr>
+            <tr>
+                <td> 21-25 MPH over in an over 40 speed zone</td>
+                <td>$221</td>
+            </tr>
+        </table>
+        <p>Choose a button.</p>
+
+        <p id="mitch"></p>
+        <button onclick="document.getElementById('mitch').innerHTML='Oh no! You did not use Mitch Greene and got a 300 dollar speeding ticket!';document.getElementById('mitch').style.display='block'">option 1!</button>
+
+        <button onclick="document.getElementById('mitch').innerHTML='Yay! You used Mitch Greene and got out of a ticket!';document.getElementById('mitch').style.display='block'">option 2!</button>
+        <button onclick="document.getElementById('mitch').style.display='none'">Hide</button>
+
     </div>
+
 
     <div class="footer">
         <p> Ian pg. 2</p>
