@@ -21,6 +21,15 @@
             margin-left: auto;
             margin-right: auto;
         }
+        
+        .mitchimg {
+            filter: grayscale(100%);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300;
+            height: 300;
+        }
     </style>
 </head>
 
@@ -39,7 +48,20 @@
         <br>
         <p> In this unfortunate event, you can thankfully look to Mitch Greene from speeding in Seattle. Mr. Greene has over 25 years of experience, and from personal experience, will get you out of that ticket.</p>
 
-        <a href="http://www.speedinginseattle.com/" target="_blank "> Visit Speeding in Seattle! </a>
+        <img src="images/mitchimage.jpg" alt="Photo of Mitch Greene" class="mitchimg">
+
+        <div style="text-align: center;">
+            <a href="http://www.speedinginseattle.com/" target="_blank "> Visit Speeding in Seattle! </a>
+        </div>
+
+        <p>Choose a button.</p>
+
+        <p id="mitch"></p>
+        <button onclick="document.getElementById('mitch').innerHTML='Oh no! You did not use Mitch Greene and got a 300 dollar speeding ticket!';document.getElementById('mitch').style.display='block'">option 1!</button>
+
+        <button onclick="document.getElementById('mitch').innerHTML='Yay! You used Mitch Greene and got out of a ticket!';document.getElementById('mitch').style.display='block'">option 2!</button>
+        <button onclick="document.getElementById('mitch').style.display='none'">Hide</button>
+
         <br>
         <p style="text-align: center;">Here is some information about speeding tickets and prices in Washington.</p>
         <table class="center">
@@ -66,13 +88,7 @@
                 <td>$221</td>
             </tr>
         </table>
-        <p>Choose a button.</p>
 
-        <p id="mitch"></p>
-        <button onclick="document.getElementById('mitch').innerHTML='Oh no! You did not use Mitch Greene and got a 300 dollar speeding ticket!';document.getElementById('mitch').style.display='block'">option 1!</button>
-
-        <button onclick="document.getElementById('mitch').innerHTML='Yay! You used Mitch Greene and got out of a ticket!';document.getElementById('mitch').style.display='block'">option 2!</button>
-        <button onclick="document.getElementById('mitch').style.display='none'">Hide</button>
 
     </div>
 
