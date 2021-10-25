@@ -27,11 +27,11 @@
             <a href="https://www.amazon.com/s?k=radar+detector&rh=n%3A172282%2Cp_72%3A1248879011&dc&crid=2PQHY7452834K&qid=1635107471&rnid=1248877011&sprefix=radar+de%2Caps%2C313&ref=sr_nr_p_72_1">List of the Most Popular Radar Detectors on Amazon</a>
         </h2>
         <hr>
-        <p>This will most likely be you without a radar detector:</p>
+        <p id="mytext">This will most likely be you without a radar detector:</p>
         <img src="images/withoutradar.png" alt="" class="image" id="myimage">
         <p>Click to see what could have happened if you did have a radar detector</p>
-        <button onclick="document.getElementById('myimage').src='images/withradar.png'">Buy Radar Detector!</button>
-        <button onclick="document.getElementById('myimage').src='images/withoutradar.png'">Reset</button>
+        <button onclick="document.getElementById('myimage').src='images/withradar.png';document.getElementById('mytext').innerHTML='This will be you with a radar detector:';document.getElementById('mytext').style.display='block'">Buy Radar Detector!</button>
+        <button onclick="document.getElementById('myimage').src='images/withoutradar.png';document.getElementById('mytext').innerHTML='This will most likely be you without a radar detector:'">Reset</button>
     </div>
     <div class="footer">
         Radar Detectors - Joe
