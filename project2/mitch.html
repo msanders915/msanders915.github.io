@@ -36,6 +36,14 @@
             width: 300;
             height: 300;
         }
+        
+        .buttons {
+            text-align: center;
+        }
+        
+        td {
+            padding-left: 200px;
+        }
     </style>
 </head>
 
@@ -60,20 +68,21 @@
             <a href="http://www.speedinginseattle.com/" target="_blank "> Visit Speeding in Seattle! </a>
         </div>
 
-        <p>Choose a button.</p>
+        <div class="buttons">
+            <p>Choose a button.</p>
 
-        <p id="mitch"></p>
-        <button onclick="document.getElementById('mitch').innerHTML='Oh no! You did not use Mitch Greene and got a 300 dollar speeding ticket!';document.getElementById('mitch').style.display='block'">option 1!</button>
+            <p id="mitch"></p>
+            <button onclick="document.getElementById('mitch').innerHTML='Oh no! You did not use Mitch Greene and got a 300 dollar speeding ticket!';document.getElementById('mitch').style.display='block'">The dumb decision.</button>
 
-        <button onclick="document.getElementById('mitch').innerHTML='Yay! You used Mitch Greene and got out of a ticket!';document.getElementById('mitch').style.display='block'">option 2!</button>
-        <button onclick="document.getElementById('mitch').style.display='none'">Hide</button>
-
+            <button onclick="document.getElementById('mitch').innerHTML='Yay! You used Mitch Greene and got out of a ticket!';document.getElementById('mitch').style.display='block'">The smart decision!</button>
+            <button onclick="document.getElementById('mitch').style.display='none'">Hide</button>
+        </div>
         <br>
         <p style="text-align: center;">Here is some information about speeding tickets and prices in Washington.</p>
         <table class="center">
             <tr>
                 <th>Ticket Type</th>
-                <th>Price</th>
+                <th style="padding-right: 335px;">Price</th>
             </tr>
             <tr>
                 <td>1-5 MPH over in a less than 40 speed zone</td>
