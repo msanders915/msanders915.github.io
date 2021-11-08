@@ -12,27 +12,63 @@
 <body>
 
     <ul class="navbar">
-        <li class="navbar"><a href="index.html" target="_blank">Home</a></li>
-        <li class="navbar"><a href="waze.html" target="_blank">Waze</a></li>
-        <li class="navbar"><a href="mitch.html" target="_blank">Mitch Greene</a></li>
-        <li class="navbar"><a href="redlight.html" target="_blank">Red Light Cameras</a></li>
-        <li class="navbar"><a href="radar.html" target="_blank">Radar Detectors</a></li>
-        <li class="navbar"><a href="LAPD.html" target="_blank">LAPD</a></li>
-        <li class="navbar"><a href="bell.html" target="_blank">Officer Bell</a></li>
+        <li class="navbar"><a href="index.html">Home</a></li>
+        <li class="navbar"><a href="waze.html">Waze</a></li>
+        <li class="navbar"><a href="mitch.html">Mitch Greene</a></li>
+        <li class="navbar"><a href="redlight.html">Red Light Cameras</a></li>
+        <li class="navbar"><a href="radar.html">Radar Detectors</a></li>
+        <li class="navbar"><a href="LAPD.html">LAPD</a></li>
+        <li class="navbar"><a href="bell.html">Officer Bell</a></li>
 
     </ul>
     <div class="side">
         <h1>Speeding Information</h1>
-        <p>For our project, we wanted to create a website to give information to people our age.</p>
+        <!--Added opacity and text decoration for new css-->
+        <p style="opacity: 0.5; text-decoration: overline underline;">For our project, we wanted to create a website to give information to people our age.</p>
         <p>We chose the topic of speeding because there are many kids that are starting to drive or have been driving, but haven't realized the safety hazards that they could cause themselves. We hope that this webside gives kids more awareness and keeps
             them safe.</p>
         <h2>Video of someone driving irresponsibly and crashing</h2>
-        <iframe width="1130" height="636" src="https://www.youtube.com/embed/jlR4FhjCF0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/jlR4FhjCF0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p id="button1">What happens if you get caught speeding?</p>
-        <button onclick="document.getElementById('button1').innerHTML='You got a speeding ticket!';document.getElementById('button1').style.display='block'">Click me</button>
-        <p id="button2">What happens if you dont speed?</p>
-        <button onclick="document.getElementById('button2').innerHTML='You didnt get a speeding ticket!';document.getElementById('button2').style.display='block'">Click me</button>
+        <button onclick="document.getElementById('button1').innerHTML='You got a speeding ticket!';document.getElementById('button1').style.display='block'" ;>Click me</button>
+        <p id="button2 ">What happens if you dont speed?</p>
+        <button onclick="document.getElementById( 'button2').innerHTML='You didnt get a speeding ticket!' ;document.getElementById( 'button2').style.display='block' ">Click me</button>
+        <table>
+            <tr>
+                <th></th>
+                <th>Odds of surviving a crash by speed</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <th>Speed</th>
+                    <th>Survival rate</th>
+                </td>
+            </tr>
 
+            <tr>
+                <td>
+                    <td> 30mph
+                        <td>60%</td>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <td>40mph
+                        <td>40%</td>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <td>70mph
+                        <td>25%</td>
+                    </td>
+                </td>
+            </tr>
+
+        </table>
     </div>
     <div class=" image ">
         <img src="images/crash.jpg " alt=" " class="image ">
