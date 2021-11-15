@@ -51,6 +51,11 @@ a:visited {
     text-align: center;
 }
 
+.quarter {
+    margin-top: 20vh;
+    text-align: center;
+}
+
 .logo {
     font-family: rubrik-new;
     font-weight: 200;
@@ -65,26 +70,12 @@ a:visited {
     text-align: center;
 }
 
-div.gallery img:hover {
-    opacity: 0.5;
-    transition: opacity 2s;
+.iformat {
+    width: 300px;
 }
 
-div.gallery:hover {
-    border: 1px solid rgb(139, 140, 137);
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 5px;
-    text-align: center;
-    font-family: rubrik-new;
-    font-weight: 400;
-    font-size: 20px;
+.shift {
+    margin-right: 50%;
 }
 
 button.margin-right {
@@ -92,9 +83,12 @@ button.margin-right {
 }
 
 body {
-    overflow: hidden;
     font-family: rubrik-new;
     font-weight: 200;
+}
+
+.noscroll {
+    overflow: hidden;
 }
 
 .css-selector {
@@ -103,6 +97,51 @@ body {
     -webkit-animation: gradient 30s ease infinite;
     -moz-animation: gradient 30s ease infinite;
     animation: gradient 30s ease infinite;
+}
+
+.carousel-item {
+    height: 65vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+}
+
+.colordiv {
+    background-color: rgba(231, 236, 239, 0.39);
+}
+
+button.homebutton {
+    display: inline-block;
+    padding: 0.15em 0.6em;
+    border: 0.1em solid rgb(231, 236, 239);
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: rubrik-new, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(94, 97, 99);
+    text-align: center;
+    transition: all 0.2s;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+button.homebutton:hover {
+    color: #000000;
+    background: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+button.homebutton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }
 
 @-webkit-keyframes gradient {
